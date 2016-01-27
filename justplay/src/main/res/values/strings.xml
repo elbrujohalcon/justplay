@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Justplay</string>
+
+    <string name="data_source_error">Data source assignment failed</string>
+</resources>
