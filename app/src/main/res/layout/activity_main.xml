@@ -25,6 +25,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
+        android:soundEffectsEnabled="false"
         android:src="@android:drawable/ic_media_play" />
 
     <TextView
@@ -44,6 +45,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
+        android:soundEffectsEnabled="false"
         android:src="@android:drawable/ic_media_play" />
 
     <TextView
@@ -63,5 +65,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
+        android:soundEffectsEnabled="false"
         android:src="@android:drawable/ic_media_play" />
 </RelativeLayout>
