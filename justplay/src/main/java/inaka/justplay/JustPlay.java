@@ -46,11 +46,15 @@ public class JustPlay {
     private static void playAudio(final MediaPlayer player) {
         new Thread(new Runnable() {
             public void run() {
-                if (player.isPlaying()) {
-                    player.stop();
-                } else {
-                    player.start();
-                }
+
+                player.start();
+                player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.reset();
+                        mp.release();
+                    }
+                });
             }
         }).start();
 
