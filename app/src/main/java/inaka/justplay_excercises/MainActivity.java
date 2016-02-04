@@ -1,5 +1,6 @@
 package inaka.justplay_excercises;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.play_uri_sound)
     public void playurisound(){
-        JustPlay.thisAudio(R.raw.hit_hat, this);
+        Uri exampleURI = Uri.parse("android.resource"
+                + "://" + getPackageName() + "/R.raw.snare");
+        JustPlay.thisAudio(exampleURI, this);
     }
 }
