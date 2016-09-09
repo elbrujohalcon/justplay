@@ -1,4 +1,4 @@
-package inaka.justplay_excercises;
+package inaka.justplayExcercises.mainTest;
 
 import org.junit.Test;
 

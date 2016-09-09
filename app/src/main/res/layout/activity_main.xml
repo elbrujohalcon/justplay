@@ -7,64 +7,67 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="inaka.justplay_excercises.MainActivity">
+    tools:context=".activities.MainActivity">
 
     <TextView
-        android:id="@+id/example_raw"
+        android:id="@+id/exampleRaw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="Example with raw file" />
+        android:text="@string/example_raw" />
 
     <ImageButton
-        android:id="@+id/play_raw_sound"
+        android:id="@+id/playRawSound"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/example_raw"
+        android:layout_below="@id/exampleRaw"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
         android:soundEffectsEnabled="false"
-        android:src="@android:drawable/ic_media_play" />
+        android:src="@android:drawable/ic_media_play"
+        tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/example_stream"
+        android:id="@+id/exampleStream"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/play_raw_sound"
+        android:layout_below="@id/playRawSound"
         android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="Example with stream file" />
+        android:text="@string/example_stream" />
 
     <ImageButton
-        android:id="@+id/play_stream_sound"
+        android:id="@+id/playStreamSound"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/example_stream"
+        android:layout_below="@id/exampleStream"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
         android:soundEffectsEnabled="false"
-        android:src="@android:drawable/ic_media_play" />
+        android:src="@android:drawable/ic_media_play"
+        tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/example_uri"
+        android:id="@+id/exampleUri"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/play_stream_sound"
+        android:layout_below="@id/playStreamSound"
         android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="Example with uri file" />
+        android:text="@string/example_URI" />
 
     <ImageButton
-        android:id="@+id/play_uri_sound"
+        android:id="@+id/playUriSound"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/example_uri"
+        android:layout_below="@id/exampleUri"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@color/colorPrimary"
         android:soundEffectsEnabled="false"
-        android:src="@android:drawable/ic_media_play" />
+        android:src="@android:drawable/ic_media_play"
+        tools:ignore="ContentDescription" />
 </RelativeLayout>

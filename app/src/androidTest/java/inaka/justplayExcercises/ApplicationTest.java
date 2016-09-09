@@ -1,4 +1,4 @@
-package inaka.justplay_excercises;
+package inaka.justplayExcercises;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

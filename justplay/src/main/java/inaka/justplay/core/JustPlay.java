@@ -1,4 +1,4 @@
-package inaka.justplay;
+package inaka.justplay.core;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -8,10 +8,13 @@ import android.util.Log;
 
 import java.io.IOException;
 
+import inaka.justplay.R;
+
 
 /**
- * Created by emi on 1/8/16.
+ * Created by tenmaster on 1/8/16.
  */
+
 public class JustPlay {
 
     public static void thisAudio(Uri audioUri, Context context) {
@@ -19,6 +22,7 @@ public class JustPlay {
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         try {
             mediaPlayer.setDataSource(context, audioUri);
+            mediaPlayer.prepare();
         } catch (IOException e) {
             Log.e(context.getString(R.string.app_name), context.getString(R.string.data_source_error));
         }
