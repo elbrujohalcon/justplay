@@ -1,4 +1,4 @@
-package inaka.justplay_excercises;
+package inaka.justplayExcercises.activities;
 
 import android.net.Uri;
 import android.os.Bundle;
@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-import inaka.justplay.JustPlay;
+import inaka.justplay.core.JustPlay;
+import inaka.justplayExcercises.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,20 +18,20 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.play_raw_sound)
+    @OnClick(R.id.playRawSound)
     public void playrawsound(){
         JustPlay.thisAudio(R.raw.hit_hat, this);
     }
 
-    @OnClick(R.id.play_stream_sound)
+    @OnClick(R.id.playStreamSound)
     public void playstreamsound(){
-        JustPlay.thisAudio("http://www.wavsource.com/snds_2016-01-10_6357263721580594/animals/bird_caw1.wav", this);
+        JustPlay.thisAudio("http://sampleswap.org/samples-ghost/DRUMS%20and%20SINGLE%20HITS/crashes/666[kb]18_inch_crash.aif.mp3", this);
     }
 
-    @OnClick(R.id.play_uri_sound)
+    @OnClick(R.id.playUriSound)
     public void playurisound(){
         Uri exampleURI = Uri.parse("android.resource"
-                + "://" + getPackageName() + "/R.raw.snare");
+                + "://" + getPackageName() + "/raw/snare");
         JustPlay.thisAudio(exampleURI, this);
     }
 }

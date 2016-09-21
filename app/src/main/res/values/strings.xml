@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">justplay-excercises</string>
+
+    <string name="example_raw">Example with raw file</string>
+    <string name="example_URI">Example with stream file</string>
+    <string name="example_stream">Example with uri file</string>
 </resources>

@@ -1,1 +1,1 @@
-include ':app', ':justplay', ':tinytasks'
+include ':app', ':justplay'
