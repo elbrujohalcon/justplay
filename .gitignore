@@ -29,3 +29,5 @@ proguard/
 .idea/
 
 app/app.iml
+
+justplay/justplay-justplay.iml

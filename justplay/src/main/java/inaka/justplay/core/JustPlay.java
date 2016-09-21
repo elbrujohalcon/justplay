@@ -11,10 +11,6 @@ import java.io.IOException;
 import inaka.justplay.R;
 
 
-/**
- * Created by tenmaster on 1/8/16.
- */
-
 public class JustPlay {
 
     public static void thisAudio(Uri audioUri, Context context) {
